@@ -1,34 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:description" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:url" content="https://frontendmentor.io" />
+    <meta property="og:type" content="website" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Social links profile</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | Social links profile</title>
 
-  Jessica Randall
-  London, United Kingdom
-  "Front-end developer and avid reader."
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      *{
+        font-family: "Inter", sans-serif;
+        margin: 0;
+        padding: 0;
+        color: hsl(0, 0%, 100%);
+        text-align: center;
+      }
 
-  GitHub
-  Frontend Mentor
-  LinkedIn
-  Twitter
-  Instagram
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+      section{
+        background-color: hsl(0, 0%, 8%);
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      @media screen and (min-width: 376px){
+        article{
+          width: 20% ;
+        }
+      }
+      @media screen and (max-width: 376px){
+        article{
+          width: 70% ;
+        }
+      }
+
+      article{
+        background-color: hsl(0, 0%, 12%);
+        padding: 30px;
+        border-radius: 20px;
+      }
+
+      article > img{
+        width: 80px;
+        height: 80px;
+        border-radius: 50px;
+        overflow: hidden;
+        margin-bottom: 10px;
+      }
+
+      article > h6{
+        margin: 10px 0;
+        color: hsl(75, 94%, 57%);
+      }
+
+      article > p{
+        font-size: 12px;
+        margin: 20px 0;
+      }
+
+      li{
+        list-style-type: none;
+        padding: 15px;
+        background-color: hsl(0, 0%, 20%);
+        margin: 10px 0;
+        border-radius: 10px;
+      }
+
+      li:hover{
+        background-color: hsl(75, 94%, 57%);
+        cursor: pointer;
+      }
+
+      li:hover a{
+        color: hsl(0, 0%, 8%);
+      }
+
+      li > a{
+        display: block;
+        text-decoration: none;
+        font-weight: 600;
+        text-align: center;
+        width: 100%;
+        font-size: 14px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <section>
+      <article>
+        <img src="./design/destkop-design.jpg" alt=""/>
+        <h1>Jessica Randall</h1>
+        <h6>London, United Kingdom</h6>
+        <p>"Front-end developer and avid reader."</p>
+        <ul>
+          <li><a href="#">GitHub</a></li>
+          <li><a href="#">Frontend Mentor</a></li>
+          <li><a href="#">LinkedIn</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">Instagram</a></li>
+        </ul>
+      </article>
+    </section>
+  </body>
 </html>
